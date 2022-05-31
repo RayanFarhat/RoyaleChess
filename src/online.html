@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Chess</title>
+  <!--  Including the chessboardjs files:-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.js"></script>
+  <script src="./chess_backend.js"></script>
+  <script src="./chess_frontend.js"></script>
+  <link rel="stylesheet" href="./chess_frontend.css">
+  <link rel="stylesheet" href="./online.css">
+
+</head>
+
+<body>
+  <!-- NavBar -->
+  <nav class="navbar navbar-expand-sm mb-5 w-100 bg-dark navbar-dark">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <h1>Welcome To <span>Royale Chess</span> :)</h1>
+      </li>
+      <li class="nav-item active pl-5 pt-2">
+        <a class="nav-link bg-danger" href="main.html">Go Back Home</a>
+      </li>
+    </ul>
+  </nav>>
+  <div id="game_status">Join Game</div>
+  <div id="online_players">Online players: 0</div>
+  <div id="player"></div>
+  <div id="enemy"></div>
+  <div id="roomNumbers">Enter a username and press the room you want to connect to:</div>
+
+  <div id="board" class="board" style="width:500px; margin: auto;"></div>
+
+
+  <div class="row">
+    <div class="col">
+      <label id="uid" for="uname"><b>Username:</b></label>
+      <input type="text" placeholder="text" maxlength="15" minlength="3" id="username" pattern="[a-zA-Z]+"
+        class="form-control form-control-md number">
+      <p id="emptyUsername" style="color:red;">Please Enter username!</p>
+    </div>
+    <div class="col">
+      <header id="roomheader"><b>Open Rooms:</b></header>
+      <nav>
+        <ul id="roomlist"></ul>
+      </nav>
+    </div>
+  </div>
+
+  <br><br><br><br><br><br>
+
+  <div class="footer w-100 p-3 bg-dark text-center fixed-bottom">
+    <div class="container">
+      <span class="text-white">Many thanks to try our chess website,
+        Copyleft © 2022</span>
+    </div>
+  </div>
+
+
+
+
+  <script src="./online.js"></script>
+
+</body>
+
+
+
+</html>

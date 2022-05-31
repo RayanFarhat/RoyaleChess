@@ -1,0 +1,117 @@
+body{
+  background-color:gainsboro ;
+  overflow-x:hidden;
+}
+#roomNumbers {
+  padding-left: 400px;
+  font-size: 20px;
+  margin: 7px;
+  font-weight: 700;
+}
+.row{
+  padding-left: 300px;
+  padding-right: 300px;
+}
+
+li  h1{
+    color: bisque;
+}
+span {
+    color: rgb(199, 138, 63);
+}
+#game_status{
+  position:absolute;
+  left:50px;
+  top:80px;
+  font-size: 50px;
+  font-family:fantasy;
+}
+#online_players{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size:larger;
+  font-weight: 500;
+  width: 200px;
+  height: 50px;
+  background-color: darkgreen;
+  color: ghostwhite;
+  position: relative;
+  border-radius: 20px;
+  left: 50px;
+}
+
+#player{
+  color: #04AA6D;
+  width: 400px;
+  font-size: 30px;
+  font-weight: 600;
+  left:50px;
+  top: 200px;
+  position: absolute  ;
+}
+#enemy{
+  color: firebrick;
+  width: 400px;
+  font-size: 30px;
+  font-weight: 600;
+  left:50px;
+  top: 300px;
+  position: absolute  ;
+}
+
+input[type=text] {
+  width: 200px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+input[type=number]{
+  width: 100px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+
+    #roomlist{
+      height:300px; 
+      width:200px;
+      overflow:hidden; 
+      overflow-y:scroll;
+      list-style: none;
+    }
+    #roomlist li{
+      background-color: rgb(109, 206, 96);
+      margin: 5px;
+      border-radius: 5px;
+      font-weight: 700;
+      cursor: pointer;
+      list-style-type: none
+    }
+
+    /* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(77, 145, 103);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./chess_frontend.css">
+    <link rel="stylesheet" href="offline.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+
+</head>
+
+<body>
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-sm mb-5 bg-dark navbar-dark">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <h1>Welcome To <span>Royale Chess</span> :)</h1>
+            </li>
+            <li class="nav-item active pl-5 pt-2">
+                <a class="nav-link bg-danger" href="main.html">Go Back Home</a>
+            </li>
+        </ul>
+    </nav>>
+    <div class="menu" id="difficulty">
+        <br>
+        <h1>Select Difficulty before start:</h1>
+        <hr><br>
+        <button type="button" class="btn easy btn-success btn-xlarge font-weight-bold">Easy</button>
+        <br><br>
+        <button type="button" class="btn medium btn-warning btn-xlarge font-weight-bold">Medium</button>
+        <br><br>
+        <button type="button" class="btn hard btn-danger btn-xlarge font-weight-bold">Hard</button>
+    </div>
+
+    <div id="gameover" class="alert alert-danger hide" role="alert"><strong></strong></div>
+    <div id="greatgame" class="alert alert-success hide" role="alert"><strong></strong></div>
+    <div id="board" class="board" style="width:500px; margin: auto;"></div>
+
+    <br>
+    <br>
+    <br>
+    <div class="footer w-100 p-3 bg-dark text-center fixed-bottom">
+        <div class="container ">
+            <span class="text-white">Many thanks to try our chess website,
+                Copyleft © 2022</span>
+        </div>
+    </div>
+    <script src="./jquery-3.2.1.min.js"></script>
+    <script src="./chess_backend.js"></script>
+    <script src="./chess_frontend.js"></script>
+    <script src="offline.js"></script>
+    <script>
+
+    </script>
+</body>
+
+</html>
